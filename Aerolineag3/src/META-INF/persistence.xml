@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="Aerolineag3PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>modelo.Pasajero</class>
+    <class>modelo.Reserva</class>
+    <class>modelo.Itinireario</class>
+    <class>modelo.Avion</class>
+    <class>modelo.Trayecto</class>
+    <class>modelo.Equipaje</class>
+    <class>modelo.Vuelo</class>
+    <class>modelo.Empleado</class>
+    <class>modelo.Ciudad</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/airdb?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="Luis199782@"/>
+    </properties>
+  </persistence-unit>
+</persistence>
